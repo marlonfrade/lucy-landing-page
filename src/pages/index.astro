@@ -10,24 +10,24 @@ import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
-const image = new URL("social.jpg", site);
+const image = new URL("social.jpeg", site);
 const description =
-  "Build fast websites, faster. Astro is a new kind of site builder for the modern web. Lightning-fast performance meets powerful developer experience.";
+  "Lucy, comunicação inteligente. Uma inteligência artificial personalizada para a sua comunidade. A Lucy é uma inteligência artificial desenvolvida para melhorar a sua experiência no Discord.";
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
+<html lang="pt-BR" class="h-full motion-safe:scroll-smooth" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <meta name="generator" content={generator} />
 
-    <title>Astro Landing Page</title>
+    <title>Lucy</title>
     <meta name="description" content={description} />
 
     <!-- social media -->
-    <meta property="og:title" content="Astro" />
+    <meta property="og:title" content="Lucy" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={image} />
