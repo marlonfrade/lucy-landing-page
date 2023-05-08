@@ -1,25 +1,79 @@
 ---
 import ContentSection from "~/components/content-section.astro";
-import ShowcaseCard from "~/components/showcase-card.astro";
-import { getShowcase } from "~/data/showcase";
+import { Picture } from "@astrojs/image/components";
+import Lucy1 from "~/assets/lucy-cta-1.png";
+import Lucy2 from "~/assets/lucy-cta-2.png";
+import Lucy3 from "~/assets/lucy-cta-3.png";
 
-const sites = await getShowcase();
+const widths = [450, 800, 1200];
 ---
 
-<ContentSection title="Showcase" id="showcase">
-  <Fragment slot="lead">
-    Astro is <span class="text-primary">versatile</span>.{" "}
-    <span class="text-primary">Explore</span> what's possible and get{" "}
-    <span class="text-primary">inspired</span>.
-  </Fragment>
-  <div class="max-w-6xl space-y-2">
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {sites.map((site) => <ShowcaseCard site={site} />)}
+<ContentSection title="Lucy" id="showcase">
+  <div class="pb-16">
+    <div class="container m-auto space-y-8 px-6 md:px-12 lg:px-20">
+      <div
+        class="justify-center gap-6 text-center md:flex md:text-left lg:items-center lg:gap-16"
+      >
+        <div class="order-last mb-6 space-y-6 md:mb-0 md:w-6/12 lg:w-6/12">
+          <h1 class="font-bold text-4xl md:text-5xl">
+            Utilize a Lucy agora e veja todo o seu <span class="text-primary"
+              >potencial</span
+            >.
+          </h1>
+          <p class="text-lg">
+            Revolucione a maneira como interage com sua comunidade. Use Lucy
+            agora e veja o potencial que o seu Discord pode alcançar.
+          </p>
+          <div class="flex flex-wrap gap-6">
+            <a
+              href="#"
+              class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
+            >
+              <span class="relative font-semibold text-white text-base"
+                >Conheça a Lucy</span
+              >
+            </a>
+            <a
+              href="#"
+              class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
+            >
+              <span
+                class="relative font-semibold text-primary text-white text-base"
+                >Veja mais</span
+              >
+            </a>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 grid-rows-4 gap-4 md:w-5/12 lg:w-6/12">
+          <div class="col-span-2 row-span-4">
+            <Picture
+              src={Lucy1}
+              class="rounded-full"
+              widths={widths}
+              alt="shoes"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-span-2 row-span-2">
+            <Picture
+              src={Lucy2}
+              class="h-full w-full rounded-xl object-cover object-top"
+              widths={widths}
+              alt="shoe"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-span-3 row-span-3">
+            <Picture
+              src={Lucy3}
+              class="h-full w-full rounded-xl object-cover object-top"
+              widths={widths}
+              alt="shoes"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-    <p class="text-right text-sm">
-      <a class="text-primary" href="https://astro.build/showcase/">
-        ...and more &rarr;
-      </a>
-    </p>
   </div>
 </ContentSection>

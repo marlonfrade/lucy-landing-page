@@ -1,89 +1,55 @@
 ---
-import CompatibilityList from "~/components/compatibility-list.astro";
 import ContentSection from "~/components/content-section.astro";
-import type { CompatibilityItem } from "~/types";
-
-const frameworks: Array<CompatibilityItem> = [
-  {
-    title: "React",
-    icon: "frameworks/react",
-    url: "https://reactjs.org/",
-  },
-  {
-    title: "Preact",
-    icon: "frameworks/preact",
-    url: "https://preactjs.com/",
-  },
-  {
-    title: "Svelte",
-    icon: "frameworks/svelte",
-    url: "https://svelte.dev/",
-  },
-  {
-    title: "Vue",
-    icon: "frameworks/vue",
-    url: "https://vuejs.org/",
-  },
-  {
-    title: "Solid",
-    icon: "frameworks/solid",
-    url: "https://www.solidjs.com/",
-  },
-  {
-    title: "Lit",
-    icon: "frameworks/lit",
-    url: "https://lit.dev/",
-  },
-];
-
-const platforms: Array<CompatibilityItem> = [
-  {
-    title: "Netlify",
-    icon: "platforms/netlify",
-    url: "https://www.netlify.com/",
-  },
-  {
-    title: "Vercel",
-    icon: "platforms/vercel",
-    url: "https://vercel.com/",
-  },
-  {
-    title: "Cloudflare",
-    icon: "fa-brands:cloudflare",
-    url: "https://pages.cloudflare.com/",
-  },
-  {
-    title: "Render",
-    icon: "platforms/render",
-    url: "https://render.com/",
-  },
-  {
-    title: "GitHub",
-    icon: "fa-brands:github",
-    url: "https://pages.github.com/",
-  },
-  {
-    title: "GitLab",
-    icon: "fa-brands:gitlab",
-    url: "https://docs.gitlab.com/ee/user/project/pages/",
-  },
-];
 ---
 
-<ContentSection title="Compatibility" id="compatibility">
+<ContentSection title="Como usar a Lucy" id="compatibility">
   <Fragment slot="lead">
-    Astro <span class="text-primary">plays nice</span>. Bring your own UI{" "}
-    <span class="text-primary">framework</span>
-    and deploy to your favorite <span class="text-primary">platform</span>.
+    Usar a lucy <span class="text-primary">é muito fácil</span>. Basta adicionar
+    o bot em seu{" "}
+    <span class="text-primary">servidor do Discord</span>
+    e começar a usar suas <span class="text-primary">funcionalidades</span>.
   </Fragment>
-  <CompatibilityList
-    items={frameworks}
-    title="Frameworks"
-    url="https://docs.astro.build/core-concepts/framework-components/"
-  />
-  <CompatibilityList
-    items={platforms}
-    title="Platforms"
-    url="https://docs.astro.build/guides/deploy/"
-  />
+  <Fragment>
+    <div class="my-16 grid max-w-screen-xl gap-6 lg:grid-cols-3">
+      <div
+        class="flex flex-col items-center justify-center space-y-4 rounded-md p-8 text-center lg:items-start lg:text-start"
+      >
+        <div
+          class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 font-bold text-gray-50 text-xl"
+        >
+          1
+        </div>
+        <p class="font-semibold text-2xl">
+          <b>Obtenha seu Token.</b>Acesse nossa página, faça login com sua conta
+          e obtenha se token.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center space-y-4 rounded-md p-8 text-center lg:items-start lg:text-start"
+      >
+        <div
+          class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 font-bold text-gray-50 text-xl"
+        >
+          2
+        </div>
+        <p class="font-semibold text-2xl">
+          <b>Adicione a Lucy.</b>Com seu token, adicione a Lucy na sua
+          comunidade para começar a interagir.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center justify-center space-y-4 rounded-md p-8 text-center lg:items-start lg:text-start"
+      >
+        <div
+          class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 font-bold text-gray-50 text-xl"
+        >
+          3
+        </div>
+        <p class="font-semibold text-2xl">
+          <b>Dê a Lucy o que é de Lucy.</b>Configure as permissões da Lucy na
+          sua comunidade e libere o seu potencial!
+        </p>
+      </div>
+    </div>
+  </Fragment>
 </ContentSection>
