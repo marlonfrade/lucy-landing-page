@@ -14,7 +14,8 @@
 
 > O projeto foi solicitado para criação de uma Landing page para apresentar a Lucy, uma IA desenvolvida para interação com comunidades do discord.
 
-![[social.jpeg]]
+![social](https://github.com/marlonfrade/lucy-landing-page/assets/84466506/54afbb5d-09c9-4f05-ab98-5ea6e018c18f)
+
 
 # 🗄️ Documentos e Referências
 
@@ -22,7 +23,7 @@
 
 
 # 📝 Escopo do Conteúdo da LP
----
+
 > Utilizando o ChatGPT, extraímos o conteúdo da apresentação da Lucy e criamos a seguinte estrutura de apresentação: 
 
 ```txt
