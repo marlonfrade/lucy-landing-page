@@ -1,0 +1,99 @@
+---
+---
+
+<style is:global>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+
+  .menu-lateral {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #f4f4f4;
+    padding: 1rem;
+  }
+
+  .menu-lateral ul {
+    list-style: none;
+  }
+
+  .menu-lateral ul li {
+    padding-bottom: 10px;
+  }
+
+  .menu-lateral ul li ul {
+    padding-left: 1rem;
+  }
+
+  .menu-lateral a {
+    text-decoration: none;
+    color: #333;
+  }
+</style>
+
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Documentação - Lucy</title>
+  </head>
+  <body>
+    <header>
+      <h1>Lucy - Documentação</h1>
+    </header>
+    <nav class="menu-lateral">
+      <ul>
+        <li><a href="#lucy">Lucy</a></li>
+        <li>
+          <a href="#como-usar">Como Usar</a>
+          <ul>
+            <li><a href="#comandos">Comandos</a></li>
+            <li><a href="#como-falar">Como Falar</a></li>
+          </ul>
+        </li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="lucy">
+        <h2>Lucy</h2>
+        <p>Conteúdo sobre Lucy.</p>
+      </section>
+      <section id="como-usar">
+        <h2>Como Usar</h2>
+        <article id="comandos">
+          <h3>Comandos</h3>
+          <p>Conteúdo sobre comandos.</p>
+        </article>
+        <article id="como-falar">
+          <h3>Como Falar</h3>
+          <p>Conteúdo sobre como falar.</p>
+        </article>
+      </section>
+      <section id="contato">
+        <h2>Contato</h2>
+        <p>Informações de contato.</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 - Lucy. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
