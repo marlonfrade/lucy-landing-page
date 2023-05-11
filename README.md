@@ -13,8 +13,7 @@
 ## [Visualizar Site](https://lucy.monkeybranch.com.br)
 
 > O projeto foi solicitado para criação de uma Landing page para apresentar a Lucy, uma IA desenvolvida para interação com comunidades do discord.
-
-![[social.jpeg]]
+![social](https://github.com/marlonfrade/lucy-landing-page/assets/84466506/a57b4e6a-fb5d-4c89-b424-6a8abe2fb72f)
 
 # 🗄️ Documentos e Referências
 
