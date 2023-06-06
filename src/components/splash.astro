@@ -1,13 +1,10 @@
 ---
-import { Picture } from "@astrojs/image/components";
+import { Image } from "@astrojs/image/components";
 import { Icon } from "astro-icon";
 import Lucy from "~/assets/lucy.png";
 import HeroImage from "~/components/hero-image.astro";
 import Starfield from "~/components/starfield.astro";
 import GitHubCorner from "./github-corner.astro";
-
-const widths = [450, 800];
-const sizes = "(min-width: 640px) 42vw, 67vw";
 ---
 
 <section class="relative h-full bg-black">
@@ -31,13 +28,11 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     </div>
     <div
       id="astronaut"
-      class="w-2/3 max-w-3xl sm:w-10/12 sm:justify-center sm:self-auto"
+      class="w-2/3 max-w-3xl sm:w-full sm:justify-center sm:self-auto"
     >
-      <Picture
+      <Image
         class="mx-auto"
         src={Lucy}
-        widths={widths}
-        sizes={sizes}
         loading="eager"
         alt="A floating astronaut in a space suit"
       />
