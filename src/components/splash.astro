@@ -1,7 +1,7 @@
 ---
 import { Image } from "@astrojs/image/components";
 import { Icon } from "astro-icon";
-import Lucy from "~/assets/lucy.png";
+import Lucy from "~/assets/lucy-3.png";
 import HeroImage from "~/components/hero-image.astro";
 import Starfield from "~/components/starfield.astro";
 import GitHubCorner from "./github-corner.astro";
@@ -13,9 +13,9 @@ import GitHubCorner from "./github-corner.astro";
   <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
     <HeroImage />
   </div>
-  <div class="relative grid place-items-center lg:grid-cols-2 lg:pl-8">
+  <div class="relative flex flex-col lg:flex-row items-center justify-center pt-10 lg:pl-8">
     <div class="flex flex-col py-4">
-      <Icon name="logomark" class="h-24 w-full text-white lg:h-32" />
+  
       <h2 class="flex">
         <div
           class="gradient-text h-full pt-8 font-extrabold text-6xl lg:py-4 xl:text-8xl"
@@ -31,7 +31,7 @@ import GitHubCorner from "./github-corner.astro";
       class="w-2/3 max-w-3xl sm:w-full sm:justify-center sm:self-auto"
     >
       <Image
-        class="mx-auto"
+        class="mx-auto mt-4"
         src={Lucy}
         loading="eager"
         alt="A floating astronaut in a space suit"

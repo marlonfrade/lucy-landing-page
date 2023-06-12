@@ -1,5 +1,7 @@
 ---
+import { Image } from "@astrojs/image/components";
 import { Icon } from "astro-icon";
+import LucyLogo from "~/icons/logomark.png";
 import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
 
@@ -16,8 +18,7 @@ const navItems: Array<NavItem> = [
 >
   <a class="flex items-center gap-3 hover:!text-default" href="#">
     <h1 class="sr-only">Lucy</h1>
-    <!-- <Icon name="logomark" class="h-20" /> -->
-    <Icon name="wordmark" class="h-12 w-full flex-1 text-black" />
+    <Icon name="wordmark" class="h-20 w-full" />
   </a>
   <div>
     <div class="flex items-center gap-6">
@@ -58,7 +59,7 @@ const navItems: Array<NavItem> = [
             </button>
           </header>
           <div class="flex justify-center">
-            <Icon name="logomark" class="h-14" />
+            <Icon name="wordmark" class="h-14" />
           </div>
           <nav>
             <ul class="flex flex-col">
