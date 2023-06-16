@@ -1,0 +1,94 @@
+---
+import { Image } from "@astrojs/image/components";
+import { Icon } from "astro-icon";
+import LucyCta1 from "~/assets/lucy-cta-1.png";
+import LucyCta2 from "~/assets/lucy-cta-2.png";
+import LucyCta3 from "~/assets/lucy-cta-3.png";
+import LucyOnRocket from "~/assets/lucy-on-rocket.png";
+import LucyIllustration from "~/assets/lucy-illustration.jpeg";
+---
+
+<div class="py-16">
+    <div
+        class="container m-auto space-y-8 px-6 text-gray-500 md:px-12 lg:px-20"
+    >
+        <div class="flex items-center justify-center -space-x-2">
+            <Image
+                loading="lazy"
+                width={220}
+                height={220}
+                src={LucyCta2}
+                alt="member photo"
+                class="h-8 w-8 rounded-full object-cover"
+            />
+            <Image
+                loading="lazy"
+                width={220}
+                height={220}
+                src={LucyCta3}
+                alt="member photo"
+                class="h-12 w-12 rounded-full object-cover"
+            />
+            <Image
+                loading="lazy"
+                width={220}
+                height={220}
+                src={LucyOnRocket}
+                alt="member photo"
+                class="z-10 h-16 w-16 rounded-full object-cover"
+            />
+            <Image
+                loading="lazy"
+                width={220}
+                height={220}
+                src={LucyIllustration}
+                alt="member photo"
+                class="relative h-12 w-12 rounded-full object-cover"
+            />
+            <Image
+                loading="lazy"
+                width={220}
+                height={220}
+                src={LucyCta1}
+                alt="member photo"
+                class="h-8 w-8 rounded-full object-cover"
+            />
+        </div>
+        <div class="m-auto space-y-6 md:w-8/12 lg:w-7/12">
+            <h1
+                class="gradient-text text-center font-bold text-4xl md:text-5xl"
+            >
+                Teste a Lucy e se surpreenda
+            </h1>
+            <p class="text-center text-gray-600 text-xl dark:text-gray-300">
+                Venha fazer parte dos mais de 1000 usuários que já utilizam toda
+                a capacidade que Lucy pode oferecer para melhorar ainda mais a
+                experiência dentro da sua comunidade.
+            </p>
+            <div
+                class="relative grid grid-cols-2 space-x-4 md:flex md:justify-center md:space-x-6"
+            >
+                <a
+                    aria-label="add to slack"
+                    href="#"
+                    class="rounded-full border border-gray-500 bg-transparent px-8 py-4 shadow-sm duration-300 hover:border-purple-600 hover:shadow-lg hover:shadow-purple-600/40 active:scale-105 active:duration-75"
+                >
+                    <div class="flex justify-center space-x-4">
+                        <Icon name="social/discord" class="h-8 w-8" />
+                        <span class="font-medium">Discord</span>
+                    </div>
+                </a>
+                <a
+                    aria-label="add to chat"
+                    href="#"
+                    class="rounded-full border border-gray-500 bg-transparent px-8 py-4 shadow-sm duration-300 hover:border-green-400 hover:text-green-400 hover:shadow-lg hover:shadow-lime-600/20 dark:hover:border-green-300/30"
+                >
+                    <div class="flex justify-center space-x-4">
+                        <Icon name="social/whatsapp-icon" class="h-8 w-8" />
+                        <span class="font-medium">WhatsApp</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

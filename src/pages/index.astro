@@ -1,13 +1,17 @@
 ---
 import "@fontsource/inter/variable.css";
-import Compatibility from "~/components/compatibility.astro";
+import Stepper from "~/components/stepper.astro";
 import Features from "~/components/features.astro";
 import Footer from "~/components/footer.astro";
 import Header from "~/components/header.astro";
-import Intro from "~/components/intro.astro";
+import Intro from "~/components/new-layout/intro.astro";
+import Presentation from "~/components/new-layout/presentation.astro";
+import CommunityCta from "~/components/new-layout/communitycta.astro";
+import LucyCta from "~/components/new-layout/lucycta.astro";
 import Showcase from "~/components/showcase.astro";
 import Splash from "~/components/splash.astro";
 import "~/styles/index.css";
+import Lucyvideo from "~/components/new-layout/lucyvideo.astro";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpeg", site);
@@ -75,8 +79,12 @@ const description =
     <Splash />
     <div class="space-y-24 px-8 py-32">
       <Intro />
+      <Presentation />
+      <CommunityCta />
       <Features />
-      <Compatibility />
+      <Lucyvideo />
+      <LucyCta />
+      <Stepper />
       <Showcase />
     </div>
     <Footer />

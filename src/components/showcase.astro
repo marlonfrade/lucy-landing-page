@@ -1,11 +1,11 @@
 ---
 import ContentSection from "~/components/content-section.astro";
-import { Picture } from "@astrojs/image/components";
-import Lucy1 from "~/assets/lucy-cta-1.png";
-import Lucy2 from "~/assets/lucy-cta-2.png";
-import Lucy3 from "~/assets/lucy-cta-3.png";
+import { Image } from "@astrojs/image/components";
+import Lucy1 from "../assets/lucy-cta-1.png";
+import Lucy2 from "../assets/lucy-cta-2.png";
+import Lucy3 from "../assets/lucy-cta-3.png";
 
-const widths = [450, 800, 1200];
+const imageWidths = [450, 800, 1200];
 ---
 
 <ContentSection title="Lucy" id="showcase">
@@ -46,30 +46,36 @@ const widths = [450, 800, 1200];
         </div>
         <div class="grid grid-cols-5 grid-rows-4 gap-4 md:w-5/12 lg:w-6/12">
           <div class="col-span-2 row-span-4">
-            <Picture
+            <Image
               src={Lucy1}
+              width={300}
+              height={300}
               class="rounded-full"
-              widths={widths}
               alt="shoes"
               loading="lazy"
+              aspectRatio="1:1"
             />
           </div>
           <div class="col-span-2 row-span-2">
-            <Picture
-              src={Lucy2}
+            <Image
               class="h-full w-full rounded-xl object-cover object-top"
-              widths={widths}
+              src={Lucy2}
+              width={300}
+              height={300}
               alt="shoe"
               loading="lazy"
+              aspectRatio="1:1"
             />
           </div>
           <div class="col-span-3 row-span-3">
-            <Picture
+            <Image
               src={Lucy3}
+              width={300}
+              height={300}
               class="h-full w-full rounded-xl object-cover object-top"
-              widths={widths}
               alt="shoes"
               loading="lazy"
+              aspectRatio="1:1"
             />
           </div>
         </div>

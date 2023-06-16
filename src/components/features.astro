@@ -1,49 +1,48 @@
 ---
 import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
-import type { FeatureItem } from "~/types";
 
-const features: Array<FeatureItem> = [
+const features = [
   {
     title: "Respostas ilimitadas para suas perguntas",
     description:
       "A Lucy está sempre pronta para responder suas dúvidas e questões, com respostas rápidas e precisas.",
-    icon: "mdi:infinity",
+    icon: "features/answer-questions-feat",
   },
   {
     title: "Imagens personalizadas",
     description:
       "Com a Lucy, você pode criar imagens personalizadas para sua comunidade, seja para memes ou ilustrações.",
-    icon: "mdi:image-edit",
+    icon: "features/image-feat",
   },
   {
     title: "Resumo de textos",
     description:
       "Se você precisa de um resumo rápido de um texto, a Lucy pode ajudar a sintetizar as informações mais importantes.",
-    icon: "mdi:file-account",
+    icon: "features/text-resume-feat",
   },
   {
     title: "Acesso a conteúdo do YouTube",
     description:
       "Com a Lucy, você pode acessar e compartilhar vídeos do YouTube diretamente no Discord, sem precisar sair do aplicativo",
-    icon: "mdi:youtube",
+    icon: "features/video-resume-feat",
   },
   {
     title: "Gerador de ideias",
     description:
       "Precisa de ajuda para desenvolver uma ideia? A Lucy pode ajudar com sugestões e insights criativos.",
-    icon: "mdi:head-lightbulb",
+    icon: "features/idea-generator-feat",
   },
   {
     title: "Assistente pessoal",
     description:
       "Além de todas as funcionalidades, a Lucy também pode ser um assistente pessoal, auxiliando você em tarefas cotidianas como lembretes e organização de agenda.",
-    icon: "mdi:assistant",
+    icon: "features/personal-assistant-feat",
   },
 ];
 ---
 
-<ContentSection title="Funcionalidades da Lucy" id="features">
+<ContentSection title="Mas o que a Lucy pode fazer?" id="features">
   <Fragment slot="lead">
     Aqui estão algumas das <span class="text-primary"
       >principais funcionalidades</span
@@ -53,8 +52,8 @@ const features: Array<FeatureItem> = [
     {
       features.map(({ title, description, icon }) => (
         <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
-          <div class="h-16 w-16 rounded-full border-2 border-current p-3">
-            <Icon name={icon} />
+          <div class="h-40 w-40 rounded-full border-2 border-current p-3">
+            <Icon class="h-full w-full" name={icon} />
           </div>
           <p class="text-center font-extrabold text-xl">{title}</p>
           <p class="text-center text-offset text-sm">{description}</p>
