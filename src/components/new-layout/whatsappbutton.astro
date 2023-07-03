@@ -1,0 +1,18 @@
+---
+import { Icon } from "astro-icon";
+const { textColor } = Astro.props;
+---
+
+<a
+    aria-label="Lucy's Whatsapp'"
+    target="_blank"
+    href="https://chat.whatsapp.com/Jf5pIVcAbJjGdU0GESjBXZ"
+    class="rounded-full border border-gray-500 bg-transparent px-8 py-4 shadow-sm duration-300 hover:border-green-600 hover:text-green-600 hover:shadow-lg hover:shadow-lime-600/20"
+>
+    <div class="flex justify-center space-x-4">
+        <Icon name="social/whatsapp-icon" class="h-8 w-8" />
+        <span class={`font-medium ${textColor === "white" && "text-white"}`}
+            >WhatsApp</span
+        >
+    </div>
+</a>

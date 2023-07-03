@@ -1,9 +1,12 @@
 ---
 import ContentSection from "~/components/content-section.astro";
+import { Icon } from "astro-icon";
 import { Image } from "@astrojs/image/components";
 import Lucy1 from "../assets/lucy-cta-1.png";
 import Lucy2 from "../assets/lucy-cta-2.png";
 import Lucy3 from "../assets/lucy-cta-3.png";
+import Discordbutton from "./new-layout/discordbutton.astro";
+import Whatsappbutton from "./new-layout/whatsappbutton.astro";
 
 const imageWidths = [450, 800, 1200];
 ---
@@ -24,24 +27,11 @@ const imageWidths = [450, 800, 1200];
             Revolucione a maneira como interage com sua comunidade. Use Lucy
             agora e veja o potencial que o seu Discord pode alcançar.
           </p>
-          <div class="flex flex-wrap gap-6">
-            <a
-              href="#"
-              class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
-            >
-              <span class="relative font-semibold text-white text-base"
-                >Conheça a Lucy</span
-              >
-            </a>
-            <a
-              href="#"
-              class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max"
-            >
-              <span
-                class="relative font-semibold text-primary text-white text-base"
-                >Veja mais</span
-              >
-            </a>
+          <div
+            class="relative grid grid-cols-2 space-x-4 md:flex md:justify-center md:space-x-6 lg:justify-start"
+          >
+            <Discordbutton />
+            <Whatsappbutton />
           </div>
         </div>
         <div class="grid grid-cols-5 grid-rows-4 gap-4 md:w-5/12 lg:w-6/12">

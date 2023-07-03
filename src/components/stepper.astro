@@ -1,8 +1,12 @@
 ---
+import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
 ---
 
-<ContentSection title="Como usar a Lucy" id="compatibility">
+<ContentSection
+  title="Como trazer a Lucy para sua comunidade"
+  id="compatibility"
+>
   <Fragment slot="lead">
     Usar a lucy <span class="text-primary">é muito fácil</span>. Basta adicionar
     o bot em seu{" "}
@@ -10,45 +14,174 @@ import ContentSection from "~/components/content-section.astro";
     e começar a usar suas <span class="text-primary">funcionalidades</span>.
   </Fragment>
   <Fragment>
-    <div class="my-16 grid max-w-screen-xl gap-6 lg:grid-cols-3">
-      <div
-        class="flex flex-col items-center justify-center space-y-4 rounded-md p-8 text-center lg:items-start lg:text-start"
-      >
-        <div
-          class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 font-bold text-gray-50 text-xl"
-        >
-          1
+    <div class="f-f-p container mx-auto px-4 pb-24 xl:px-0">
+      <div class="f-f-p md:mt-24">
+        <!-- Desktop View -->
+        <div class="hidden w-full justify-center md:flex">
+          <div
+            class="relative flex flex-col items-center border-gray-300 md:w-1/2 md:items-end md:border-r-4 md:pr-12"
+          >
+            <div aria-label="sign up" role="img">
+              <Icon
+                name="stepper/login-discord"
+                class="h-full w-80 focus:outline-none"
+              />
+            </div>
+            <div aria-label="2" role="img">
+              <img
+                class="focus:outline-none"
+                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg2.svg"
+                alt=""
+              />
+            </div>
+            <div
+              class="mt-12 flex flex-col items-center md:w-8/12 lg:items-end"
+            >
+              <h1 class="font-bold leading-5 text-xl focus:outline-none">
+                Habilite os canais para Lucy
+              </h1>
+              <h2
+                class="mt-3 pl-3 text-center leading-6 tracking-wide text-base focus:outline-none md:text-right"
+              >
+                Dentro da Área de Dashboard da Lucy, você terá acesso aos canais
+                em que você é administrador, autorize a Lucy nos canais que
+                deseja utiliza-lá.
+              </h2>
+            </div>
+            <div aria-label="transactions" role="img">
+              <Icon
+                name="stepper/discord-channels"
+                class="mt-10 h-full w-80 focus:outline-none"
+              />
+            </div>
+            <img
+              class="absolute right-0 top-0 -mr-1 -mt-2 hidden md:block"
+              src="https://cdn.tuk.dev/assets/components/111220/Fs7/line.png"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="mt-20 flex flex-col items-center md:mt-0 md:w-1/2 md:items-start md:pl-12 lg:border-gray-400"
+          >
+            <div aria-label="1" role="img">
+              <img
+                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg4.svg"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="mt-6 flex flex-col items-center md:w-8/12 md:items-start"
+            >
+              <h1 class="font-bold leading-5 text-xl focus:outline-none">
+                Faça Login no Discord e autorize a Lucy
+              </h1>
+              <h2
+                class="mt-3 leading-6 tracking-wide text-base focus:outline-none"
+              >
+                Clique no Botão abaixo e faça Login com a sua conta com o
+                Discord, autorize a Lucy como um BOT para criar comandos na sua
+                comunidade.
+              </h2>
+            </div>
+            <div aria-label="wallet" role="img">
+              <Icon
+                name="stepper/discord-dashboard"
+                class="mt-20 h-full w-80 focus:outline-none"
+              />
+            </div>
+            <div aria-label="3" role="img">
+              <img
+                class="mt-20 focus:outline-none"
+                src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg6.svg"
+                alt=""
+              />
+            </div>
+            <div
+              class="mt-6 flex flex-col items-center md:w-8/12 md:items-start"
+            >
+              <h1 class="font-bold leading-5 text-xl focus:outline-none">
+                Escolha os comandos para Lucy
+              </h1>
+              <h2
+                class="mt-3 leading-6 tracking-wide text-base focus:outline-none"
+              >
+                Após ter escolhido seus canais, libere os comandos para que os
+                usuários possam interagir com Lucy e pronto! Aproveite para
+                desfrutar das habilidades incríveis que a Lucy possui e traga a
+                sua comunidade para o próximo nível de inteligência.
+              </h2>
+            </div>
+          </div>
         </div>
-        <p class="font-semibold text-2xl">
-          <b>Obtenha seu Token.</b>Acesse nossa página, faça login com sua conta
-          e obtenha se token.
-        </p>
-      </div>
-      <div
-        class="flex flex-col items-center justify-center space-y-4 rounded-md p-8 text-center lg:items-start lg:text-start"
-      >
-        <div
-          class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 font-bold text-gray-50 text-xl"
-        >
-          2
+        <!-- Mobile View -->
+        <div class="flex w-full flex-col items-center md:hidden">
+          <Icon
+            name="stepper/login-discord"
+            class="h-full w-80 focus:outline-none"
+          />
+
+          <img
+            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg4.svg"
+            alt=""
+          />
+          <div class="mt-10">
+            <h1 class="font-bold leading-5 text-xl focus:outline-none">
+              Faça Login no Discord e autorize a Lucy
+            </h1>
+            <h2
+              class="mt-3 leading-6 tracking-wide text-base focus:outline-none"
+            >
+              Clique no Botão abaixo e faça Login com a sua conta com o Discord,
+              autorize a Lucy como um BOT para criar comandos na sua comunidade.
+            </h2>
+          </div>
+          <Icon
+            name="stepper/discord-dashboard"
+            class="mt-20 h-full w-80 focus:outline-none"
+          />
+          <img
+            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg2.svg"
+            alt=""
+          />
+          <div class="mt-10">
+            <h1 class="pl-3 font-bold leading-5 text-xl focus:outline-none">
+              Habilite os canais para Lucy
+            </h1>
+            <h2
+              class="mt-3 pl-3 leading-6 tracking-wide text-base focus:outline-none sm:text-center md:text-right"
+            >
+              Dentro da Área de Dashboard da Lucy, você terá acesso aos canais
+              em que você é administrador, autorize a Lucy nos canais que deseja
+              utiliza-lá.
+            </h2>
+          </div>
+          <Icon
+            name="stepper/discord-channels"
+            class="mt-10 h-full w-80 focus:outline-none"
+          />
+          <img
+            class=""
+            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/3_step_center_aligned_how_it_worksSvg6.svg"
+            alt=""
+          />
+          <div
+            class="mt-10 flex flex-col sm:items-center md:w-8/12 md:items-start"
+          >
+            <h1 class="font-bold leading-5 text-xl focus:outline-none">
+              Escolha os comandos para Lucy
+            </h1>
+            <h2
+              class="mt-3 leading-6 tracking-wide text-base focus:outline-none"
+            >
+              Após ter escolhido seus canais, libere os comandos para que os
+              usuários possam interagir com Lucy e pronto! Aproveite para
+              desfrutar das habilidades incríveis que a Lucy possui e traga a
+              sua comunidade para o próximo nível de inteligência.
+            </h2>
+          </div>
         </div>
-        <p class="font-semibold text-2xl">
-          <b>Adicione a Lucy.</b>Com seu token, adicione a Lucy na sua
-          comunidade para começar a interagir.
-        </p>
-      </div>
-      <div
-        class="flex flex-col items-center justify-center space-y-4 rounded-md p-8 text-center lg:items-start lg:text-start"
-      >
-        <div
-          class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-violet-600 font-bold text-gray-50 text-xl"
-        >
-          3
-        </div>
-        <p class="font-semibold text-2xl">
-          <b>Dê a Lucy o que é de Lucy.</b>Configure as permissões da Lucy na
-          sua comunidade e libere o seu potencial!
-        </p>
       </div>
     </div>
   </Fragment>

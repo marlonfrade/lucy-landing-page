@@ -3,12 +3,12 @@ import { Image } from "@astrojs/image/components";
 import { Icon } from "astro-icon";
 import LucyLogo from "~/icons/logomark.png";
 import ThemeSwitcher from "~/components/theme-switcher.astro";
-import type { NavItem } from "~/types";
 
-const navItems: Array<NavItem> = [
+const navItems = [
+  { title: "Lucy", url: "#lucy" },
+  { title: "Sobre", url: "#about" },
   { title: "Funcionalidades", url: "#features" },
-  { title: "Lucy", url: "#showcase" },
-  { title: "Como usar", url: "#compatibility" },
+  { title: "Como usar", url: "#howToUse" },
 ];
 ---
 
@@ -18,7 +18,7 @@ const navItems: Array<NavItem> = [
 >
   <a class="flex items-center gap-3 hover:!text-default" href="#">
     <h1 class="sr-only">Lucy</h1>
-    <Icon name="wordmark" class="h-20 w-full" />
+    <Icon name="wordmark" class="h-20 w-20" />
   </a>
   <div>
     <div class="flex items-center gap-6">

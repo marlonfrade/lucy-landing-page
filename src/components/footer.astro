@@ -2,21 +2,20 @@
 import { Icon } from "astro-icon";
 import HeroImage from "~/components/hero-image.astro";
 
-
-const links= [
+const links = [
   {
-    url: "https://astro.build/chat",
-    description: "Astro on Discord",
+    url: "https://discord.gg/APP78HMrzP",
+    description: "Lucy's Discord'",
     icon: "fa-brands:discord",
   },
   {
-    url: "https://astro.build/",
-    description: "Astro's official website",
+    url: "https://www.instagram.com/lucy.monkeybranch/",
+    description: "Lucy's Instagram",
     icon: "mdi:instagram",
   },
   {
-    url: "https://github.com/mhyfritz/astro-landing-page",
-    description: "View source on GitHub",
+    url: "https://twitter.com/MonkeyBranchBR",
+    description: "lucy's Twitter'",
     icon: "fa-brands:twitter",
   },
 ];
@@ -33,6 +32,7 @@ const links= [
           <li>
             <a
               class="flex h-16 w-16 items-center justify-center rounded-full border-2 border-current p-4"
+              target="_blank"
               href={link.url}
             >
               <span class="sr-only">{link.description}</span>

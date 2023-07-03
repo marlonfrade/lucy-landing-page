@@ -5,6 +5,8 @@ import Lucy from "~/assets/lucy-3.png";
 import HeroImage from "~/components/hero-image.astro";
 import Starfield from "~/components/starfield.astro";
 import GitHubCorner from "./github-corner.astro";
+import Discordbutton from "./new-layout/discordbutton.astro";
+import Whatsappbutton from "./new-layout/whatsappbutton.astro";
 ---
 
 <section class="relative h-full bg-black">
@@ -26,6 +28,12 @@ import GitHubCorner from "./github-corner.astro";
           <br />inteligente.
         </div>
       </h2>
+      <div
+        class="relative grid grid-cols-2 space-x-4 pt-4 md:flex md:justify-center md:space-x-6 lg:justify-start"
+      >
+        <Discordbutton textColor="white" />
+        <Whatsappbutton textColor="white" />
+      </div>
     </div>
     <div
       id="astronaut"

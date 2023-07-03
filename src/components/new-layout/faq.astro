@@ -1,0 +1,71 @@
+---
+import { Icon } from "astro-icon";
+
+const Faqs = [
+    {
+        title: "Quais dados dos usuários são armazenados?",
+        content:
+            "Não se preocupe, a Lucy utiliza seus dados apenas no momento em que é acionada para processar a informação e gerar uma resposta. Após esse processo, seus dados são descartados imediatamente.",
+    },
+    {
+        title: "Quanto custa usar a Lucy?",
+        content:
+            "A Lucy oferece um plano gratuito com funcionalidades básicas. Para acesso a recursos adicionais e avançados, temos um plano premium disponível. Se sua empresa ou comunidade precisa de funções exclusivas, entre em contato conosco para discutir opções personalizadas.",
+    },
+    {
+        title: "Como funciona o fluxo dos dados?",
+        content:
+            "Quando você aciona a Lucy, sua mensagem e o contexto solicitado são enviados para os servidores da OpenAI, onde são processados. Em seguida, a resposta é enviada de volta para a Lucy, que a encaminha para você. Os dados são descartados do servidor após o processo.",
+    },
+    {
+        title: "A Lucy aprende ou utiliza dados de outros lugares?",
+        content:
+            "Não, a Lucy não utiliza nada além do que já está disponível na OpenAI. Todos os dados gerados são ignorados ou descartados quando utilizados para gerar uma resposta.",
+    },
+    {
+        title: "Existe a possibilidade da Lucy aprender?",
+        content:
+            "Sim, para planos corporativos ou comunidades, é possível aplicar aprendizado para que a Lucy se adeque às necessidades específicas ou utilize dados como fonte de conhecimento. Para esses casos, discutimos as funcionalidades desejadas e formalizamos um contrato para garantir a segurança dos dados e o cumprimento das políticas de privacidade.",
+    },
+    {
+        title: "A Lucy pode criar alertas, enviar mensagens para outros grupos ou gerenciar agendas?",
+        content:
+            "Sim, essas funções são exclusivas para planos corporativos ou comunidades. Para manter a segurança dos dados, a tecnologia é construída exclusivamente para o cliente e isolada do aplicativo principal.",
+    },
+    {
+        title: "Por que a Lucy não disponibiliza funções personalizadas para todos os usuários?",
+        content:
+            "Para garantir um controle de escala e custos. Qualquer funcionalidade que exija recursos adicionais é tratada como um serviço sob demanda, com um contrato formal e medidas jurídicas para garantir a segurança e o sigilo dos dados.",
+    },
+    {
+        title: "Por que devo usar a Lucy no meu dia a dia?",
+        content:
+            "A Lucy acelera a interpretação e o consumo de informações, permitindo que você obtenha respostas e pesquise sem precisar sair do aplicativo. Ter uma inteligência artificial sempre disponível no seu bolso pode ser uma ferramenta poderosa para tomada de decisões e fonte de conhecimento.",
+    },
+];
+---
+
+<section>
+    <div class="container mx-auto flex flex-col justify-center p-4 md:p-8">
+        <p class="tracki p-2 text-center font-medium uppercase text-sm">
+            Como Funciona?
+        </p>
+        <h2 class="leadi mb-12 text-center font-bold text-4xl sm:text-5xl">
+            Perguntas Frequentes
+        </h2>
+        <div
+            class="grid gap-10 sm:p-3 md:grid-cols-2 md:gap-8 lg:px-12 xl:px-32"
+        >
+            {
+                Faqs.map(({ title, content }) => {
+                    return (
+                        <div>
+                            <h3 class="font-semibold">{title}</h3>
+                            <p class="mt-1 text-offset">{content}</p>
+                        </div>
+                    );
+                })
+            }
+        </div>
+    </div>
+</section>

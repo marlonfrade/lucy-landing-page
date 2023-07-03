@@ -1,0 +1,19 @@
+---
+import { Icon } from "astro-icon";
+
+const { textColor } = Astro.props;
+---
+
+<a
+    aria-label="Lucy's Discord'"
+    target="_blank"
+    href="https://discord.gg/APP78HMrzP"
+    class="rounded-full border border-gray-500 bg-transparent px-8 py-4 shadow-sm duration-300 hover:border-purple-600 hover:shadow-lg hover:shadow-purple-600/40 active:scale-105 active:duration-75"
+>
+    <div class="flex justify-center space-x-4">
+        <Icon name="social/discord" class="h-8 w-8" />
+        <span class={`font-medium ${textColor === "white" && "text-white"}`}
+            >Discord</span
+        >
+    </div>
+</a>

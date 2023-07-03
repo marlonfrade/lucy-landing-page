@@ -4,14 +4,16 @@ import { Icon } from "astro-icon";
 import LucyOnRocket from "~/assets/lucy-on-rocket.png";
 import LucyImg from "~/assets/lucy-illustration.png";
 import LucyDoll from "~/assets/lucy-cta-1.png";
+import Discordbutton from "./discordbutton.astro";
+import Whatsappbutton from "./whatsappbutton.astro";
 ---
 
-<div class="relative pb-20 pt-40 lg:pt-44">
+<div id="lucy" class="relative pb-20 pt-40 lg:pt-44">
     <div class="relative m-auto px-6 xl:container md:px-12 lg:px-6">
         <h1
-            class="text-center font-black sm:mx-auto sm:w-10/12 sm:text-5xl md:w-2/3 md:text-6xl lg:w-auto lg:text-left"
+            class="text-center font-black text-3xl sm:mx-auto sm:w-10/12 sm:text-5xl md:w-2/3 md:text-6xl lg:w-auto lg:text-left"
         >
-            A Lucy veio para Reescrever<br class="hidden lg:block" />
+            A Lucy veio para escrever<br class="hidden lg:block" />
             <span class="gradient-text relative">de novo, a história</span>.
         </h1>
         <div class="lg:flex">
@@ -32,26 +34,8 @@ import LucyDoll from "~/assets/lucy-cta-1.png";
                 <div
                     class="relative grid grid-cols-2 space-x-4 md:flex md:justify-center md:space-x-6 lg:justify-start"
                 >
-                    <a
-                        aria-label="add to slack"
-                        href="#"
-                        class="rounded-full border border-gray-500 bg-transparent px-8 py-4 shadow-sm duration-300 hover:border-purple-600 hover:shadow-lg hover:shadow-purple-600/40 active:scale-105 active:duration-75"
-                    >
-                        <div class="flex justify-center space-x-4">
-                            <Icon name="social/discord" class="h-8 w-8" />
-                            <span class="font-medium">Discord</span>
-                        </div>
-                    </a>
-                    <a
-                        aria-label="add to chat"
-                        href="#"
-                        class="rounded-full border border-gray-500 bg-transparent px-8 py-4 shadow-sm duration-300 hover:border-green-400 hover:text-green-400 hover:shadow-lg hover:shadow-lime-600/20 dark:hover:border-green-300/30"
-                    >
-                        <div class="flex justify-center space-x-4">
-                            <Icon name="social/whatsapp-icon" class="h-8 w-8" />
-                            <span class="font-medium">WhatsApp</span>
-                        </div>
-                    </a>
+                    <Discordbutton />
+                    <Whatsappbutton />
                 </div>
 
                 <div>
@@ -102,7 +86,7 @@ import LucyDoll from "~/assets/lucy-cta-1.png";
             <div
                 class="container mx-auto flex items-end justify-between px-6 md:px-12 lg:px-7"
             >
-                <a href="" class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4">
                     <Image
                         class="h-14 w-14 rounded-full object-cover"
                         src={LucyDoll}
@@ -114,7 +98,7 @@ import LucyDoll from "~/assets/lucy-cta-1.png";
                         <span class="text-sm">Dúvidas ?</span>
                         <p class="font-semibold">Fale com a Lucy!</p>
                     </div>
-                </a>
+                </div>
 
                 <div
                     class="flex items-center justify-center gap-4 lg:justify-start"
@@ -127,7 +111,7 @@ import LucyDoll from "~/assets/lucy-cta-1.png";
 
                     <div class="flex gap-4">
                         <a
-                            href="#"
+                            href="https://www.instagram.com/lucy.monkeybranch/"
                             target="_blank"
                             class="text-gray-400 transition duration-300 ease-in-out hover:scale-150 hover:text-gray-500 active:text-gray-600"
                         >
@@ -146,7 +130,7 @@ import LucyDoll from "~/assets/lucy-cta-1.png";
                         </a>
 
                         <a
-                            href="#"
+                            href="https://twitter.com/MonkeyBranchBR"
                             target="_blank"
                             class="text-gray-400 transition duration-300 ease-in-out hover:scale-150 hover:text-gray-500 active:text-gray-600"
                         >
@@ -165,7 +149,7 @@ import LucyDoll from "~/assets/lucy-cta-1.png";
                         </a>
 
                         <a
-                            href="#"
+                            href="https://www.facebook.com/profile.php?id=100093092734958"
                             target="_blank"
                             class="text-gray-400 transition duration-300 ease-in-out hover:scale-150 hover:text-gray-500 active:text-gray-600"
                         >
